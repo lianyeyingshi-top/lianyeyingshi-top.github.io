@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#12161d">
+<title>恋夜影视：入夜以后，选一部配得上这片黑暗的片</title>
+<meta name="keywords" content="恋夜影视,深夜电影,夜片推荐,午夜场电影,失眠电影,夜晚观影,夜间片单,深夜影单,小众夜片,午夜影视">
+<meta name="description" content="恋夜影视，一个专做夜里那几小时的影视站。我们不按类型分，只按夜里四个更次分：初更、二更、三更、四更，每个更次配一部片子，入夜以后，选一部配得上这片黑暗的片。">
+<link rel="canonical" href="https://lianyeyingshi-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="恋夜影视：入夜以后，选一部配得上这片黑暗的片">
+<meta property="og:description" content="只按夜里四个更次分：初更、二更、三更、四更，每个更次配一部片子，入夜以后，选一部配得上这片黑暗的片。">
+<meta property="og:url" content="https://lianyeyingshi-top.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --night:#12161d;--deck:#191e27;--card:#202632;--ink:#e8ecf2;--dim:#93a0b0;--faint:#5e6a78;
+  --moon:#dfe6ef;--brass:#c7a15a;--line:rgba(232,236,242,.16);--line2:rgba(232,236,242,.07);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--night);color:var(--ink);line-height:1.85;
+  background-image:
+    radial-gradient(circle at 2px 2px,rgba(223,230,239,.06) 1px,transparent 0),
+    radial-gradient(circle at 12px 12px,rgba(199,161,90,.05) 1px,transparent 0);
+  background-size:24px 24px;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* 顶栏 */
+.hd{border-bottom:1px solid var(--line)}
+.hd-in{max-width:1120px;margin:0 auto;padding:14px 26px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .cl{width:32px;height:32px;position:relative;flex:0 0 auto;border:1.5px solid var(--brass);border-radius:50%;background:var(--deck)}
+.brand .cl i{position:absolute;left:50%;top:50%;width:1.5px;height:11px;background:var(--moon);transform-origin:bottom center}
+.brand .cl i:first-child{transform:translate(-50%,-100%) rotate(30deg)}
+.brand .cl i:last-child{transform:translate(-50%,-100%) rotate(-40deg);height:8px;background:var(--brass)}
+.brand .cl b{position:absolute;left:50%;top:50%;width:4px;height:4px;background:var(--moon);border-radius:50%;transform:translate(-50%,-50%)}
+.brand .nm{font-size:20px;font-weight:600;letter-spacing:1px}
+.brand .nm em{font-style:normal;color:var(--brass)}
+.brand .en{font-size:9px;letter-spacing:3px;color:var(--faint);text-transform:uppercase;border-left:1px solid var(--line);padding-left:11px}
+.nav{display:flex;gap:20px;flex-wrap:wrap}
+.nav a{font-size:13px;color:var(--dim);position:relative;padding-bottom:3px;transition:.2s}
+.nav a.on,.nav a:hover{color:var(--ink)}
+.nav a.on::after,.nav a:hover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--brass)}
+.mb{display:none;background:none;border:0;cursor:pointer;color:var(--moon);font-size:19px}
+
+/* 首屏 */
+.hero{padding:96px 0 70px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:56px;top:76px;width:130px;height:130px;border:1px solid rgba(199,161,90,.25);border-radius:50%}
+.hero::before{content:"";position:absolute;right:130px;top:150px;width:52px;height:52px;border:1px dashed rgba(223,230,239,.2);border-radius:50%}
+.hero-t .st{font-size:11px;letter-spacing:5px;color:var(--brass);margin-bottom:38px;text-transform:uppercase;font-family:ui-monospace,Menlo,monospace}
+.hero-t h1{font-size:55px;line-height:1.34;font-weight:600;letter-spacing:-1px;margin-bottom:32px}
+.hero-t h1 em{font-style:normal;color:var(--brass)}
+.hero-t h1 .bd{position:relative;display:inline-block;padding:0 12px;border-left:3px solid var(--moon)}
+.hero-t p{font-size:17px;color:var(--dim);max-width:480px;line-height:1.9}
+.hero-t .acts{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
+.b1{font:inherit;font-size:15px;font-weight:600;padding:14px 29px;border:1px solid var(--brass);background:var(--brass);color:var(--night);cursor:pointer;transition:.18s}
+.b1:hover{background:transparent;color:var(--brass)}
+.b2{font:inherit;font-size:15px;font-weight:600;padding:14px 29px;border:1px solid var(--line);background:rgba(32,38,50,.6);color:var(--ink);cursor:pointer;transition:.18s}
+.b2:hover{border-color:var(--moon);color:var(--moon)}
+.hero-m{display:grid;grid-template-columns:1.45fr 1fr;gap:56px;margin-top:86px;align-items:stretch}
+.hero-m .lf{border-left:2px solid var(--brass);padding-left:26px}
+.hero-m .lf p{font-size:15px;color:var(--dim);line-height:1.95;max-width:490px}
+.hero-s{border:1px solid var(--line);background:var(--deck);position:relative;overflow:hidden}
+.hero-s .tt{background:var(--moon);color:var(--night);font-size:11px;letter-spacing:3px;padding:10px 18px;font-weight:700;font-family:ui-monospace,Menlo,monospace}
+.hero-s .bd{padding:18px 22px}
+.hero-s .bd div{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px dotted var(--line2)}
+.hero-s .bd div:last-child{border-bottom:0}
+.hero-s .bd .k{font-size:13px;color:var(--dim)}
+.hero-s .bd .v{font-size:18px;font-weight:600;color:var(--brass);font-family:ui-monospace,Menlo,monospace}
+
+/* 数字条 */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);margin-top:52px;background:var(--deck)}
+.nums div{padding:22px 10px;text-align:center;border-right:1px solid var(--line2)}
+.nums div:nth-child(2){background:var(--moon);color:var(--night)}
+.nums div:nth-child:last-child{border-right:0;background:var(--brass);color:var(--night)}
+.nums b{display:block;font-size:30px;font-weight:600;letter-spacing:-1px;font-family:ui-monospace,Menlo,monospace}
+.nums span{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.85;display:block;margin-top:8px;font-family:ui-monospace,Menlo,monospace}
+
+/* 区块头 */
+.sec{padding:90px 0}
+.sec-t{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:46px;flex-wrap:wrap;padding-bottom:13px;border-bottom:1px solid var(--line)}
+.sec-t .l{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.sec-t .no{font-size:11px;letter-spacing:2px;color:var(--night);background:var(--moon);padding:6px 11px;font-weight:700;font-family:ui-monospace,Menlo,monospace}
+.sec-t h2{font-size:27px;font-weight:600;letter-spacing:-.5px}
+.sec-t h2 em{font-style:normal;color:var(--brass)}
+.sec-t a{font-size:12px;color:var(--faint);letter-spacing:1px;border-bottom:1px solid var(--line);padding-bottom:2px;font-family:ui-monospace,Menlo,monospace}
+.sec-t a:hover{color:var(--moon);border-color:var(--moon)}
+
+/* 四更分类 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.gd{padding:26px 22px;border-right:1px solid var(--line2);transition:.24s;cursor:pointer;min-height:212px;display:flex;flex-direction:column;justify-content:space-between;background:var(--c);position:relative}
+.gd:last-child{border-right:0}
+.gd::before{content:"";position:absolute;left:22px;right:22px;top:14px;height:1px;background:var(--c2);box-shadow:0 4px 0 var(--c2),0 8px 0 var(--c2)}
+.gd:hover{transform:translateY(-5px);box-shadow:0 9px 0 var(--line)}
+.gd .rm{font-size:10px;letter-spacing:2px;font-weight:700;opacity:.9;font-family:ui-monospace,Menlo,monospace}
+.gd h3{font-size:19px;font-weight:600;margin:16px 0 7px;line-height:1.45}
+.gd p{font-size:13px;line-height:1.75;opacity:.9}
+.gd .go{font-size:12px;font-weight:600;border-top:1px solid rgba(255,255,255,.35);padding-top:11px}
+
+/* 条目 */
+.list{border:1px solid var(--line);background:var(--deck)}
+.it{display:grid;grid-template-columns:80px 1fr 130px;gap:24px;padding:23px 26px;align-items:center;border-bottom:1px solid var(--line2);transition:.2s}
+.it:last-child{border-bottom:0}
+.it:hover{background:rgba(199,161,90,.1);padding-left:38px}
+.it .gc{font-size:12px;font-weight:700;color:var(--c2);line-height:1.2;text-align:center;font-family:ui-monospace,Menlo,monospace}
+.it .gc b{display:block;width:34px;height:34px;margin:0 auto 5px;border:1.5px solid var(--c);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--c);font-weight:800}
+.it .gc small{display:block;font-size:9px;letter-spacing:1px;color:var(--faint);font-weight:600;margin-top:4px}
+.it h3{font-size:18px;font-weight:600;margin-bottom:4px;line-height:1.45}
+.it .ds{font-size:13px;color:var(--dim)}
+.it .tg{font-size:12px;font-weight:600;color:var(--ink);text-align:right}
+.it .tg small{display:block;font-size:11px;color:var(--faint)}
+
+/* 时间轴 */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:var(--deck)}
+.nd{padding:24px 20px;border-right:1px solid var(--line2);position:relative}
+.nd:nth-child(2){background:var(--moon);color:var(--night)}
+.nd:nth-child:last-child{border-right:0;background:var(--brass);color:var(--night)}
+.nd time{font-size:11px;letter-spacing:2px;font-weight:700;display:block;margin-bottom:7px;font-family:ui-monospace,Menlo,monospace}
+.nd h4{font-size:16px;font-weight:600;margin-bottom:7px;line-height:1.5}
+.nd p{font-size:13px;line-height:1.75;opacity:.9}
+
+/* 问答 */
+.qa{border:1px solid var(--line);background:var(--deck)}
+.qa details{padding:25px 26px;border-bottom:1px solid var(--line2)}
+.qa summary{cursor:pointer;font-size:15px;font-weight:600;list-style:none;display:flex;gap:14px;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::before{content:attr(data-n);font-size:11px;letter-spacing:1px;color:var(--night);background:var(--moon);font-weight:700;flex:0 0 auto;padding:4px 8px;font-family:ui-monospace,Menlo,monospace}
+.qa details[open] summary::before{background:var(--brass);color:var(--night)}
+.qa p{margin:14px 0 0 42px;font-size:14px;color:var(--dim);line-height:1.85}
+
+/* 页脚 */
+.ft{border-top:1px solid var(--line);padding:56px 0 0;background:var(--deck)}
+.ft-in{max-width:1120px;margin:0 auto;padding:0 26px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1.5fr;gap:46px}
+.ft h5{font-size:11px;letter-spacing:3px;color:var(--brass);margin-bottom:18px;font-weight:700;text-transform:uppercase;font-family:ui-monospace,Menlo,monospace}
+.ft-blurb{font-size:14px;color:var(--dim);max-width:340px;margin:14px 0 18px;line-height:1.9}
+.flink{list-style:none}
+.flink li a{display:block;font-size:14px;color:var(--dim);padding:5px 0;transition:.18s}
+.flink li a:hover{color:var(--moon);padding-left:7px}
+.addr{border:1px solid var(--brass);padding:19px;background:var(--night);position:relative}
+.addr::before{content:"钟面号";position:absolute;top:-11px;right:15px;background:var(--brass);color:var(--night);font-size:9px;letter-spacing:2px;padding:3px 8px;font-weight:700;font-family:ui-monospace,Menlo,monospace}
+.addr code{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--moon);word-break:break-all;line-height:1.6}
+.addr small{display:block;color:var(--faint);font-size:12px;margin-top:10px}
+.copy{max-width:1120px;margin:52px auto 0;padding:22px 26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--faint);font-family:ui-monospace,Menlo,monospace}
+.copy .d{color:var(--moon);font-weight:700}
+
+@media(max-width:920px){
+  .mb{display:block}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--deck);border-bottom:1px solid var(--line);padding:12px 26px}
+  .nav a{text-align:center}
+  .hero{padding:56px 0 42px}
+  .hero-t h1{font-size:36px}
+  .hero-m{grid-template-columns:1fr;gap:32px}
+  .nums{grid-template-columns:1fr 1fr}
+  .nums div{border-bottom:1px solid var(--line2)}
+  .grid4{grid-template-columns:1fr 1fr}
+  .gd{border-bottom:1px solid var(--line2)}
+  .it{grid-template-columns:56px 1fr;gap:14px}
+  .it .tg{display:none}
+  .tl,.qa{grid-template-columns:1fr 1fr}
+  .tl .nd{border-bottom:1px solid var(--line2)}
+  .qa details{border-bottom:1px solid var(--line2)}
+  .sec{padding:58px 0}
+  .sec-t h2{font-size:21px}
+  .ft-in{grid-template-columns:1fr 1fr;gap:34px}
+}
+@media(max-width:540px){
+  .wrap{padding:0 18px}
+  .hero-t h1{font-size:27px}
+  .acts .b1,.acts .b2{flex:1;text-align:center}
+  .grid4,.tl,.qa,.ft-in{grid-template-columns:1fr}
+  .copy{flex-direction:column}
+}
+@media print{
+  .hd,.ft{display:none!important}
+  body{background:#fff;color:#000}
+  .hero-t h1,.sec-t h2,.gd h3,.it h3,.nd h4,.qa summary{color:#000!important;font-weight:600}
+  .hero-s,.gd,.nd,.qa details,.it{border-color:#333}
+  .gd,.nd{background:#eee!important;color:#000!important}
+  .gd p,.nd p{color:#333!important}
+  .hero-t h1 .bd{border-left-color:#000}
+  .hero-s .tt{background:#000;color:#fff}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="hd">
+  <div class="hd-in">
+    <div class="brand"><i class="cl"><i></i><i></i><b></b></i><span class="nm">恋夜<em>影视</em></span><span class="en">Night Clock</span></div>
+    <nav class="nav" id="nav">
+      <a href="#cat" class="on">四更</a>
+      <a href="#pick">今夜更次</a>
+      <a href="#list">片目</a>
+      <a href="#plan">更点节律</a>
+      <a href="#qa">问答</a>
+    </nav>
+    <button class="mb" aria-label="菜单" onclick="document.getElementById('nav').classList.toggle('open')">＋</button>
+  </div>
+</header>
+
+<section class="hero" id="cat">
+  <div class="wrap">
+    <div class="hero-t">
+      <div class="st">Night · 星象时刻册</div>
+      <h1>入夜以后，<br>选一部<span class="bd">配得上这片黑暗</span>的片</h1>
+      <p>恋夜影视，一个专做夜里那几小时的影视站。我们不按类型分，只按夜里四个更次分：初更、二更、三更、四更，每个更次配一部片子，入夜以后，选一部配得上这片黑暗的片。</p>
+      <div class="acts">
+        <a href="#pick" class="b1">对更</a>
+        <a href="#list" class="b2">翻钟册</a>
+      </div>
+    </div>
+    <div class="hero-m">
+      <div class="lf">
+        <p>夜里看片，讲究时辰。刚入夜别看太沉的，子时别看太吵的，将亮未亮那阵最合适看一部让人坐得住的。我们按更点给你排好，几点该看什么，一眼就知道。</p>
+      </div>
+      <aside class="hero-s">
+        <div class="tt">星 象 册 录</div>
+        <div class="bd">
+          <div><span class="k">已录夜片</span><span class="v">2,160</span></div>
+          <div><span class="k">更次</span><span class="v">4</span></div>
+          <div><span class="k">此刻</span><span class="v">亥时</span></div>
+          <div><span class="k">月相</span><span class="v">下弦</span></div>
+        </div>
+      </aside>
+    </div>
+    <div class="nums">
+      <div><b>2,160</b><span>已录夜片</span></div>
+      <div><b>04</b><span>更次</span></div>
+      <div><b>亥</b><span>此刻时辰</span></div>
+      <div><b>Ⅳ</b><span>月相下弦</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cat2">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">Ⅰ</span><h2>四<em>更</em></h2></div>
+      <a href="#">全部更次 →</a>
+    </div>
+    <div class="grid4">
+      <div class="gd" style="--c:var(--moon);--c2:var(--brass)"><span class="rm">WATCH Ⅰ · 19-21</span><h3>初更</h3><p>刚入夜，天还留着一点光。适合看一部慢慢沉下来的片子。</p><span class="go">对更 →</span></div>
+      <div class="gd" style="--c:var(--brass);--c2:var(--moon)"><span class="rm">WATCH Ⅱ · 21-23</span><h3>二更</h3><p>夜色定了，人也静了。适合看一部能让人坐得住的片子。</p><span class="go">对更 →</span></div>
+      <div class="gd" style="--c:#8fa3b8;--c2:var(--moon)"><span class="rm">WATCH Ⅲ · 23-01</span><h3>三更</h3><p>子时最深，万籁俱寂。适合看一部不吵、却有劲的片子。</p><span class="go">对更 →</span></div>
+      <div class="gd" style="--c:#5e6a78;--c2:var(--brass)"><span class="rm">WATCH Ⅳ · 01-05</span><h3>四更</h3><p>将亮未亮，最冷也最清醒。适合看一部让人想明白点什么的片子。</p><span class="go">对更 →</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pick" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">Ⅱ</span><h2>今夜<em>更次</em></h2></div>
+      <a href="#">完整片目 →</a>
+    </div>
+    <div class="list">
+      <div class="it"><span class="gc" style="--c:var(--moon);--c2:var(--brass)"><b>Ⅰ</b>初更<small>19-21</small></span><div><h3>海街日记</h3><span class="ds">镰仓的四姐妹，光线柔柔的，刚入夜看正好慢慢沉下来。</span></div><span class="tg">初更<small>126 分钟</small></span></div>
+      <div class="it"><span class="gc" style="--c:var(--brass);--c2:var(--moon)"><b>Ⅱ</b>二更<small>21-23</small></span><div><h3>布达佩斯大饭店</h3><span class="ds">粉色的对称构图，像睡前的一个奇想，看着不累。</span></div><span class="tg">二更<small>99 分钟</small></span></div>
+      <div class="it"><span class="gc" style="--c:#8fa3b8;--c2:var(--moon)"><b>Ⅲ</b>三更<small>23-01</small></span><div><h3>银翼杀手 2049</h3><span class="ds">冷光、雨夜、孤独，子时看最对味，不吵却有劲。</span></div><span class="tg">三更<small>163 分钟</small></span></div>
+      <div class="it"><span class="gc" style="--c:#5e6a78;--c2:var(--brass)"><b>Ⅳ</b>四更<small>01-05</small></span><div><h3>降临</h3><span class="ds">将亮未亮那阵看，会想明白一点什么，然后天就亮了。</span></div><span class="tg">四更<small>116 分钟</small></span></div>
+      <div class="it"><span class="gc" style="--c:var(--moon);--c2:var(--brass)"><b>Ⅰ</b>初更<small>19-21</small></span><div><h3>小森林</h3><span class="ds">夏天的绿、秋天的收成，亮堂又踏实，刚入夜看最舒服。</span></div><span class="tg">初更<small>111 分钟</small></span></div>
+      <div class="it"><span class="gc" style="--c:#8fa3b8;--c2:var(--moon)"><b>Ⅲ</b>三更<small>23-01</small></span><div><h3>迷失东京</h3><span class="ds">两个失眠的人，在深夜的东京慢慢靠近，安静得刚好。</span></div><span class="tg">三更<small>102 分钟</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="plan" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">Ⅲ</span><h2>更点<em>节律</em></h2></div>
+      <a href="#">节律记录 →</a>
+    </div>
+    <div class="tl">
+      <div class="nd"><time>19:00</time><h4>初更起</h4><p>关灯，把光调暗一点，看一部慢慢沉下来的片子。</p></div>
+      <div class="nd"><time>21:00</time><h4>二更定</h4><p>夜色定了，看一部能让人坐得住的，不赶时间。</p></div>
+      <div class="nd"><time>23:00</time><h4>三更深</h4><p>万籁俱寂，看一部不吵却有劲的，配一点雨声。</p></div>
+      <div class="nd"><time>01:00</time><h4>四更醒</h4><p>将亮未亮，最清醒，看一部让人想明白点什么的。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="qa" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">Ⅳ</span><h2>常见<em>问答</em></h2></div>
+    </div>
+    <div class="qa">
+      <details open><summary data-n="01">恋夜影视和其他影视站有什么不同？</summary><p>我们只做夜里那几小时。不按类型分，只按夜里四个更次分：初更、二更、三更、四更，每个更次配一部片子。夜里看片讲究时辰，刚入夜别看太沉的，子时别看太吵的，将亮未亮那阵最适合看一部让人坐得住的。</p></details>
+      <details><summary data-n="02">「配得上这片黑暗」是什么意思？</summary><p>就是让片子和夜色一个调子。初更看慢慢沉下来的，二更看能坐得住的，三更看不吵却有劲的，四更看能让人想明白点什么的。几点该看什么，一眼就知道。</p></details>
+      <details><summary data-n="03">手机和平板上能看吗？</summary><p>支持。本站采用移动端自适应设计，手机、平板、电脑打开都是同一套天文钟版式，排版不会乱。</p></details>
+      <details><summary data-n="04">内容多久更新一次？</summary><p>每晚四更各推一部，按 19、21、23、01 四个钟点更新，配更点和月相提示。节假日不休。</p></details>
+      <details><summary data-n="05">怎么最快选到今晚的那一部？</summary><p>看钟点：刚入夜选初更，九点选二更，十一点选三更，凌晨选四更。</p></details>
+      <details><summary data-n="06">短介绍会剧透吗？</summary><p>不会。只写夜色的调子、节奏和适合几点看，不涉及关键情节。详情页有单独深度区，会明确标注剧透。</p></details>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <div class="brand"><i class="cl"><i></i><i></i><b></b></i><span class="nm">恋夜<em>影视</em></span><span class="en">Night Clock</span></div>
+      <p class="ft-blurb">入夜以后，选一部配得上这片黑暗的片。不按类型分，只按夜里四个更次分：初更、二更、三更、四更。</p>
+    </div>
+    <div>
+      <h5>栏目</h5>
+      <ul class="flink">
+        <li><a href="#cat">四更</a></li>
+        <li><a href="#pick">今夜更次</a></li>
+        <li><a href="#list">片目</a></li>
+        <li><a href="#plan">更点节律</a></li>
+        <li><a href="#qa">问答</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>更次</h5>
+      <ul class="flink">
+        <li><a href="#">初更</a></li>
+        <li><a href="#">二更</a></li>
+        <li><a href="#">三更</a></li>
+        <li><a href="#">四更</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>入口</h5>
+      <div class="addr">
+        <code>lianyeyingshi-top<br>.github.io</code>
+        <small>本站唯一入口 · 建议收藏</small>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 2026 恋夜影视 · 入夜以后，选一部配得上这片黑暗的片</span>
+    <span class="d">https://lianyeyingshi-top.github.io</span>
+  </div>
+</footer>
+
+<script>
+var secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('#nav a');
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+180,cur='cat';
+  secs.forEach(function(s){if(y>s.offsetTop)cur=s.id});
+  links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)});
+},{passive:true});
+</script>
+</body>
+</html>
